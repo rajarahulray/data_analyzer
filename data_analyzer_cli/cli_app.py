@@ -8,11 +8,15 @@ options for the cli :
     2. analyzewithgraph : performs the analysis(like the above operation), and outputs
                             the result in a visual graph.
 """
-import pandas
+# import pandas
 
 
 class DataAnalyzerCli:
-    def __init__(self):
+    def __init__(self, *csv_file, excel_file):
+        self.csv_files = csv_file
+        self.excel_files = excel_file
+
+    def csv_analyzer(self):
         pass
 
 
